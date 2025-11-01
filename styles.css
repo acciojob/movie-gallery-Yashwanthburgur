@@ -1,8 +1,9 @@
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-
-/* For mobile */
-@media (max-width: 576px) {
-  .container-fluid > div {
-    grid-column: span 12;
-  }
+/* Force the columns to work without row wrapper */
+.container-fluid > [class*="col-"] {
+    flex: 0 0 auto;
 }
