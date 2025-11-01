@@ -1,0 +1,17 @@
+.container-fluid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}
+
+.col-sm-1 { grid-column: span 1; }
+.col-sm-2 { grid-column: span 2; }
+.col-sm-4 { grid-column: span 4; }
+.col-sm-12 { grid-column: span 12; }
+
+/* For mobile */
+@media (max-width: 576px) {
+  .container-fluid > div {
+    grid-column: span 12;
+  }
+}
